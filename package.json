@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PDDDave/161_Temp.git"
+    "url": "git+https://github.com/itdev161-fa2023/david-charles.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PDDDave/161_Temp/issues"
+    "url": "https://github.com/itdev161-fa2023/david-charles/issues"
   },
-  "homepage": "https://github.com/PDDDave/161_Temp#readme",
+  "homepage": "https://github.com/itdev161-fa2023/david-charles#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.8",
