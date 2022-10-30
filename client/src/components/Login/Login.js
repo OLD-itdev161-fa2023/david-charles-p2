@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
 
@@ -30,7 +30,7 @@ const Login = ({ authenticateUser })=> {
         try {
             const config = {
                 headers: {
-                    'Content-Type': 'applicaiton/json'
+                    'Content-Type': 'application/json'
                 }
             }
 
@@ -81,7 +81,7 @@ const Login = ({ authenticateUser })=> {
             </div>
         </div>
     )
-    
+
 }
 
 export default Login;
