@@ -180,6 +180,17 @@ app.post(
     }
 );
 
+app.get('/api/posts', auth, async (req, res) =>{
+    try {
+        const posts = await Post.find().sort({ date: -1 });
+
+        res.json(posts);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('Server error');
+    }
+});
+
 const returnToken = (user, res) => {
     //Generate and return a JWT 
     const payload = {
