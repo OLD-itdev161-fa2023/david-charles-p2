@@ -70,7 +70,7 @@ class App extends React.Component {
       <Router>
         <div className="App">
           <header className = "App-header">
-          <h1>Good Things</h1>
+          <h1>Game Zone</h1>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -88,15 +88,28 @@ class App extends React.Component {
           </header>
           <main>
             <Route exact path="/">
-              {user ?
-                <React.Fragment>
-                  <div>Hello {user}!</div>
-                  <div>{data}</div>
-                </React.Fragment> :
-                <React.Fragment>
-                  Please Register or Login
-                </React.Fragment>
-              }
+              <div id='homeWrapper'>
+                {user ?
+                  <React.Fragment>
+                    <div className='black'>Hello {user}!</div>
+                    <div className='black'>{data}</div>
+                  </React.Fragment> :
+                  <React.Fragment>
+                    <p className='black'>Please Register or Login to access mind melting game action!</p>
+                  </React.Fragment>
+                }
+                <div id='pictureBar'>
+                  <figure>
+                    <img src="breakout.PNG" alt='Breakout-like action!' className='homeImg'/>
+                    <figcaption>Can you clear the board?  Or will you drop the ball?</figcaption>
+                  </figure>
+                  <figure>
+                    <img src="memory.png" alt='Breakout-like action!' className='homeImg'/>
+                    <figcaption>Match all the cards for the quickest time!</figcaption>
+                  </figure>
+                  
+                </div>
+              </div>
 
             </Route>
             <Switch>

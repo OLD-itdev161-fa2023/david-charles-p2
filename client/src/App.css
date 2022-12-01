@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: black;
 }
 
 .App-logo {
@@ -13,7 +14,7 @@
 } */
 
 .App-header {
-  background-color: #282c34;
+  background-color: #17569b;
   min-height: 10vh;
   display: flex;
   flex-direction: row;
@@ -47,9 +48,45 @@
   color: #09d3ac;
 }
 
+.black{
+  color: white;
+  background-color: black;
+}
+
 main {
   margin: 30px auto;
 }
+
+#homeWrapper{
+  background-color: teal;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 20em;
+}
+
+#pictureBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#pictureBar figure{
+  max-width: 50%;
+  background-color: teal;
+}
+
+#pictureBar figure img{
+  max-height: 365px;
+}
+
+figcaption {
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+
 
 /* @keyframes App-logo-spin {
   from {
