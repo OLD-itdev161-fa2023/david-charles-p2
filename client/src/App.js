@@ -112,7 +112,7 @@ class App extends React.Component {
                 <div>
                   {user ?
                     <React.Fragment>
-                      <p id='gameBtn'>Play Some Games!!!</p>
+                      <Link to="/BreakoutLanding"><p id='gameBtn'>Play Some Games!!!</p></Link>
                     </React.Fragment>:
                     <React.Fragment>
                     <p></p>
@@ -129,6 +129,9 @@ class App extends React.Component {
               <Route 
               exact path="/Login"
               render={() => <Login {...authProps} />}/>
+              <Route
+                  exact path="/BreakoutLanding"
+                  render={()=><BreakoutLanding {...authProps}/>}/>
             </Switch>
           </main>
           

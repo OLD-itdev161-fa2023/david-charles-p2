@@ -1,14 +1,16 @@
+import React from "react";
 
-return(
-    
-    <div>
-        <body>
-            <main>
+class BreakoutLanding extends React.Component{
+    render() {
+        return (
+            <div>
                 <div id="score">0</div>
-                <div class="grid">
-                </div>
-            </main>
+                <div class="grid"></div>
+                <script src="./BreakoutGame.js"></script>
+            </div>
             
-        </body>
-    </div>
-)
+            )
+    }
+}
+
+export default BreakoutLanding;
