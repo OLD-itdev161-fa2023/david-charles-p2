@@ -3,6 +3,7 @@ import React from 'react';
 import './App.css';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
+import BreakoutLanding from './components/Games/Breakout/BreakoutLanding';  //Error: you need JS to run this
 import axios from 'axios';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
@@ -93,7 +94,7 @@ class App extends React.Component {
                   <React.Fragment>
                     <div className='black'>Hello {user}!</div>
                     <div className='black'>{data}</div>
-                  </React.Fragment> :
+                  </React.Fragment>:
                   <React.Fragment>
                     <p className='black'>Please Register or Login to access mind melting game action!</p>
                   </React.Fragment>
@@ -107,7 +108,16 @@ class App extends React.Component {
                     <img src="memory.png" alt='Breakout-like action!' className='homeImg'/>
                     <figcaption>Match all the cards for the quickest time!</figcaption>
                   </figure>
-                  
+                </div>
+                <div>
+                  {user ?
+                    <React.Fragment>
+                      <p id='gameBtn'>Play Some Games!!!</p>
+                    </React.Fragment>:
+                    <React.Fragment>
+                    <p></p>
+                    </React.Fragment>
+                  }
                 </div>
               </div>
 

@@ -1,3 +1,10 @@
+figcaption {
+  color: white;
+  background-color: black;
+  border-radius: 15px;
+  padding: 5px;
+}
+
 .App {
   text-align: center;
   background-color: black;
@@ -79,11 +86,52 @@ main {
   max-height: 365px;
 }
 
-figcaption {
-  color: white;
-  background-color: black;
-  border-radius: 15px;
-  padding: 5px;
+#gameBtn{
+  font-size: large;
+  font-weight: bold;
+  justify-content: center;
+  border-radius: 25px;
+  color: red;
+  width: fit-content;
+  background-color: #17569b;
+  border: 2px solid black;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gameBtn:hover {
+  transform: scale(1.5);
+}
+
+.grid {
+  position: absolute;
+  width: 560px;
+  height: 300px;
+  border: solid black 1px;
+  margin-top: 80px;
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: aqua;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: silver;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 10px;
 }
 
 
