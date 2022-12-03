@@ -5,7 +5,7 @@ class BreakoutLanding extends React.Component{
         return (
             <div>
                 <div id="score">0</div>
-                <div class="grid"></div>
+                <div className="grid"></div>
                 <script src="./BreakoutGame.js"></script>
             </div>
             

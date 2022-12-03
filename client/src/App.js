@@ -103,21 +103,31 @@ class App extends React.Component {
                   <figure>
                     <img src="breakout.PNG" alt='Breakout-like action!' className='homeImg'/>
                     <figcaption>Can you clear the board?  Or will you drop the ball?</figcaption>
+                    <div>
+                      {user ?
+                        <React.Fragment>
+                          <Link to="/BreakoutLanding"><p id='gameBtn'>Play Breakout!</p></Link>
+                        </React.Fragment>:
+                        <React.Fragment>
+                        <p></p>
+                        </React.Fragment>
+                      }
+                    </div>
                   </figure>
                   <figure>
                     <img src="memory.png" alt='Breakout-like action!' className='homeImg'/>
                     <figcaption>Match all the cards for the quickest time!</figcaption>
+                    <div>
+                    {user ?
+                        <React.Fragment>
+                          <a href='../public/Memory/index.html'><p id='gameBtn'>Play Memory!</p></a>
+                        </React.Fragment>:
+                        <React.Fragment>
+                        <p></p>
+                        </React.Fragment>
+                      }
+                  </div>
                   </figure>
-                </div>
-                <div>
-                  {user ?
-                    <React.Fragment>
-                      <Link to="/BreakoutLanding"><p id='gameBtn'>Play Some Games!!!</p></Link>
-                    </React.Fragment>:
-                    <React.Fragment>
-                    <p></p>
-                    </React.Fragment>
-                  }
                 </div>
               </div>
 
